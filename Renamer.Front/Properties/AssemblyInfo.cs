@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Renamer.Front")]
-[assembly: AssemblyDescription("A fully-featured massive files/folders renamer.")]
+[assembly: AssemblyDescription("A fully-featured files/folders massive renamer.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Andres Garcia Alves")]
 [assembly: AssemblyProduct("Renamer 3")]
