@@ -60,9 +60,9 @@ Download and  doble-click 'Setup.exe' to install.
 
 ### Requirements
 
-- .NET Framework 4.8 runtime is needed.
-
-Enjoy!
+- .NET Framework 4.8 runtime is needed.  
 
 This is the first public release of this proyect.  
-If you want, please send me your feedback: andres.garcia.alves@gmail.com
+If you want, please send me your feedback: andres.garcia.alves@gmail.com  
+
+Enjoy!
