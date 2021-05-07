@@ -17,16 +17,16 @@ And also: 'Renaiming preview', 'Undo last rename batch', 'Activity logs', ...
 
 ### Screenshots
 
-| Setup Menues      | Make manual files |
-|-------------------|-------------------|
+| Main screen                      | Quick Access menu                |
+|----------------------------------|----------------------------------|
 | ![](Resources/Screenshot-01.png) | ![](Resources/Screenshot-02.png) |
 
-| Demo              |  Context Menu     |
-|-------------------|-------------------|
+| Folders/files added to batch     |  Rename Settings                 |
+|----------------------------------|----------------------------------|
 | ![](Resources/Screenshot-03.png) | ![](Resources/Screenshot-04.png) |
 
-| Compress Files    | Compress Folders  |
-|-------------------|-------------------|
+| Rename Preview                   | Rename Logs                      |
+|----------------------------------|----------------------------------|
 | ![](Resources/Screenshot-05.png) | ![](Resources/Screenshot-06.png) |
 
 ### Setup & Use
