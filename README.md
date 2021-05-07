@@ -13,10 +13,7 @@ Current renaming methods:
 - positional-replacemente
 - positional-append.
 
-And also: 'renaiming preview', 'activity logs', 'undo last rename batch', ...
-
-This is the first public release of this proyect.  
-If you want, please send me your feedback: andres.garcia.alves@gmail.com
+And also: 'Renaiming preview', 'Undo last rename batch', 'Activity logs', ...
 
 ### Screenshots
 
@@ -66,3 +63,6 @@ Download and  doble-click 'Setup.exe' to install.
 - .NET Framework 4.8 runtime is needed.
 
 Enjoy!
+
+This is the first public release of this proyect.  
+If you want, please send me your feedback: andres.garcia.alves@gmail.com
