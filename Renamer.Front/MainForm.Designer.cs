@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("Directories", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("Files", System.Windows.Forms.HorizontalAlignment.Left);
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("Directories", System.Windows.Forms.HorizontalAlignment.Left);
             System.Windows.Forms.ListViewGroup listViewGroup4 = new System.Windows.Forms.ListViewGroup("Files", System.Windows.Forms.HorizontalAlignment.Left);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            System.Windows.Forms.ListViewGroup listViewGroup5 = new System.Windows.Forms.ListViewGroup("Directories", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup6 = new System.Windows.Forms.ListViewGroup("Files", System.Windows.Forms.HorizontalAlignment.Left);
             this.tabMain = new System.Windows.Forms.TabControl();
             this.tabPageFilesFolders = new System.Windows.Forms.TabPage();
             this.statusStripPath = new System.Windows.Forms.StatusStrip();
@@ -200,13 +200,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listViewSelectedItems.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnFullPath});
-            listViewGroup1.Header = "Directories";
-            listViewGroup1.Name = "lstViewGroupDirectories";
-            listViewGroup2.Header = "Files";
-            listViewGroup2.Name = "lstViewGroupFiles";
+            listViewGroup3.Header = "Directories";
+            listViewGroup3.Name = "lstViewGroupDirectories";
+            listViewGroup4.Header = "Files";
+            listViewGroup4.Name = "lstViewGroupFiles";
             this.listViewSelectedItems.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup1,
-            listViewGroup2});
+            listViewGroup3,
+            listViewGroup4});
             this.listViewSelectedItems.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listViewSelectedItems.HideSelection = false;
             this.listViewSelectedItems.LargeImageList = this.imgListObjectTypes;
@@ -994,13 +994,13 @@
             this.listViewPreview.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnName,
             this.columnNewName});
-            listViewGroup3.Header = "Directories";
-            listViewGroup3.Name = "lstViewGroupDirectories";
-            listViewGroup4.Header = "Files";
-            listViewGroup4.Name = "lstViewGroupFiles";
+            listViewGroup5.Header = "Directories";
+            listViewGroup5.Name = "lstViewGroupDirectories";
+            listViewGroup6.Header = "Files";
+            listViewGroup6.Name = "lstViewGroupFiles";
             this.listViewPreview.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup3,
-            listViewGroup4});
+            listViewGroup5,
+            listViewGroup6});
             this.listViewPreview.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listViewPreview.HideSelection = false;
             this.listViewPreview.LargeImageList = this.imgListObjectTypes;
@@ -1109,7 +1109,7 @@
             this.menuBtnUndo.Margin = new System.Windows.Forms.Padding(0, 1, 20, 2);
             this.menuBtnUndo.Name = "menuBtnUndo";
             this.menuBtnUndo.Size = new System.Drawing.Size(140, 27);
-            this.menuBtnUndo.Text = " Undo";
+            this.menuBtnUndo.Text = " &Undo";
             this.menuBtnUndo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.menuBtnUndo.ToolTipText = "Undo last rename";
             this.menuBtnUndo.Click += new System.EventHandler(this.menuBtnUndo_Click);
@@ -1141,20 +1141,20 @@
             this.toolStripMenuItemUserFolder.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItemUserFolder.Image = global::Renamer.Front.Properties.Resources.UserFolder_Home;
             this.toolStripMenuItemUserFolder.Name = "toolStripMenuItemUserFolder";
-            this.toolStripMenuItemUserFolder.Size = new System.Drawing.Size(144, 22);
+            this.toolStripMenuItemUserFolder.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItemUserFolder.Text = "User\'s Folder";
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(141, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(177, 6);
             // 
             // toolStripMenuItemDesktop
             // 
             this.toolStripMenuItemDesktop.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItemDesktop.Image = global::Renamer.Front.Properties.Resources.UserFolder_Desktop;
             this.toolStripMenuItemDesktop.Name = "toolStripMenuItemDesktop";
-            this.toolStripMenuItemDesktop.Size = new System.Drawing.Size(144, 22);
+            this.toolStripMenuItemDesktop.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItemDesktop.Text = "Desktop";
             // 
             // toolStripMenuItemDocuments
@@ -1162,7 +1162,7 @@
             this.toolStripMenuItemDocuments.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItemDocuments.Image = global::Renamer.Front.Properties.Resources.UserFolder_Documents;
             this.toolStripMenuItemDocuments.Name = "toolStripMenuItemDocuments";
-            this.toolStripMenuItemDocuments.Size = new System.Drawing.Size(144, 22);
+            this.toolStripMenuItemDocuments.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItemDocuments.Text = "Documents";
             // 
             // toolStripMenuItemDownloads
@@ -1170,7 +1170,7 @@
             this.toolStripMenuItemDownloads.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItemDownloads.Image = global::Renamer.Front.Properties.Resources.UserFolder_Downloads;
             this.toolStripMenuItemDownloads.Name = "toolStripMenuItemDownloads";
-            this.toolStripMenuItemDownloads.Size = new System.Drawing.Size(144, 22);
+            this.toolStripMenuItemDownloads.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItemDownloads.Text = "Downloads";
             // 
             // toolStripMenuItemMusic
@@ -1178,7 +1178,7 @@
             this.toolStripMenuItemMusic.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItemMusic.Image = global::Renamer.Front.Properties.Resources.UserFolder_Music;
             this.toolStripMenuItemMusic.Name = "toolStripMenuItemMusic";
-            this.toolStripMenuItemMusic.Size = new System.Drawing.Size(144, 22);
+            this.toolStripMenuItemMusic.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItemMusic.Text = "Music";
             // 
             // toolStripMenuItemPictures
@@ -1186,7 +1186,7 @@
             this.toolStripMenuItemPictures.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItemPictures.Image = global::Renamer.Front.Properties.Resources.UserFolder_Pictures;
             this.toolStripMenuItemPictures.Name = "toolStripMenuItemPictures";
-            this.toolStripMenuItemPictures.Size = new System.Drawing.Size(144, 22);
+            this.toolStripMenuItemPictures.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItemPictures.Text = "Pictures";
             // 
             // toolStripMenuItemVideos
@@ -1194,7 +1194,7 @@
             this.toolStripMenuItemVideos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItemVideos.Image = global::Renamer.Front.Properties.Resources.UserFolder_Videos;
             this.toolStripMenuItemVideos.Name = "toolStripMenuItemVideos";
-            this.toolStripMenuItemVideos.Size = new System.Drawing.Size(144, 22);
+            this.toolStripMenuItemVideos.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItemVideos.Text = "Videos";
             // 
             // toolStripProgressBar
@@ -1212,7 +1212,7 @@
             this.menuBtnAbout.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.menuBtnAbout.Name = "menuBtnAbout";
             this.menuBtnAbout.Size = new System.Drawing.Size(110, 28);
-            this.menuBtnAbout.Text = " About";
+            this.menuBtnAbout.Text = "About";
             this.menuBtnAbout.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.menuBtnAbout.Click += new System.EventHandler(this.menuBtnAbout_Click);
             // 
