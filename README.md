@@ -47,7 +47,7 @@ Download and  doble-click 'Setup.exe' to install.
 | `Remove All` | Removes all folders/files from the rename batch. |
 
 2. On 'Rename Settings' tab:  
-2a. Select a renaming method (Eg. UpperCase, LowerCase, InvertedCase, By Patterns, Positional, etc)  
+2a. Select a renaming method (Eg. upper-case, lower-case, inverted-case, by-pattern, positional, etc)  
 2b. If needed, complete adicional settings.  
 2c. Optionally select to affect also file(s) extensions.  
 
