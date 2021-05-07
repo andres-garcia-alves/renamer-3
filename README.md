@@ -21,7 +21,7 @@ And also: 'Renaiming preview', 'Undo last rename batch', 'Activity logs', ...
 |----------------------------------|----------------------------------|
 | ![](Resources/Screenshot-01.png) | ![](Resources/Screenshot-02.png) |
 
-| Folders/files added to batch     |  Rename Settings                 |
+| Folders & files added to batch   |  Rename Settings                 |
 |----------------------------------|----------------------------------|
 | ![](Resources/Screenshot-03.png) | ![](Resources/Screenshot-04.png) |
 
