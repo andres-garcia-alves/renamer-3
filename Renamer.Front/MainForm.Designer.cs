@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("Directories", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("Files", System.Windows.Forms.HorizontalAlignment.Left);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("Directories", System.Windows.Forms.HorizontalAlignment.Left);
             System.Windows.Forms.ListViewGroup listViewGroup4 = new System.Windows.Forms.ListViewGroup("Files", System.Windows.Forms.HorizontalAlignment.Left);
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            System.Windows.Forms.ListViewGroup listViewGroup5 = new System.Windows.Forms.ListViewGroup("Directories", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup6 = new System.Windows.Forms.ListViewGroup("Files", System.Windows.Forms.HorizontalAlignment.Left);
             this.tabMain = new System.Windows.Forms.TabControl();
             this.tabPageFilesFolders = new System.Windows.Forms.TabPage();
             this.statusStripPath = new System.Windows.Forms.StatusStrip();
@@ -200,13 +200,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listViewSelectedItems.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnFullPath});
-            listViewGroup3.Header = "Directories";
-            listViewGroup3.Name = "lstViewGroupDirectories";
-            listViewGroup4.Header = "Files";
-            listViewGroup4.Name = "lstViewGroupFiles";
+            listViewGroup1.Header = "Directories";
+            listViewGroup1.Name = "lstViewGroupDirectories";
+            listViewGroup2.Header = "Files";
+            listViewGroup2.Name = "lstViewGroupFiles";
             this.listViewSelectedItems.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup3,
-            listViewGroup4});
+            listViewGroup1,
+            listViewGroup2});
             this.listViewSelectedItems.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listViewSelectedItems.HideSelection = false;
             this.listViewSelectedItems.LargeImageList = this.imgListObjectTypes;
@@ -919,9 +919,9 @@
             this.radInvertedCase.AutoSize = true;
             this.radInvertedCase.Location = new System.Drawing.Point(63, 248);
             this.radInvertedCase.Name = "radInvertedCase";
-            this.radInvertedCase.Size = new System.Drawing.Size(78, 17);
+            this.radInvertedCase.Size = new System.Drawing.Size(90, 17);
             this.radInvertedCase.TabIndex = 15;
-            this.radInvertedCase.Text = "Invert case";
+            this.radInvertedCase.Text = "Inverted case";
             this.radInvertedCase.UseVisualStyleBackColor = true;
             // 
             // lblUpperCaseExample
@@ -994,13 +994,13 @@
             this.listViewPreview.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnName,
             this.columnNewName});
-            listViewGroup5.Header = "Directories";
-            listViewGroup5.Name = "lstViewGroupDirectories";
-            listViewGroup6.Header = "Files";
-            listViewGroup6.Name = "lstViewGroupFiles";
+            listViewGroup3.Header = "Directories";
+            listViewGroup3.Name = "lstViewGroupDirectories";
+            listViewGroup4.Header = "Files";
+            listViewGroup4.Name = "lstViewGroupFiles";
             this.listViewPreview.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup5,
-            listViewGroup6});
+            listViewGroup3,
+            listViewGroup4});
             this.listViewPreview.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listViewPreview.HideSelection = false;
             this.listViewPreview.LargeImageList = this.imgListObjectTypes;

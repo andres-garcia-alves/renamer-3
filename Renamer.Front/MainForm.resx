@@ -128,7 +128,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAD+
-        CwAAAk1TRnQBSQFMAgEBBAEAAfwBAgH8AQIBEAEAARABAAT/ARkBAAj/AUIBTQE2BwABNgMAASgDAAFA
+        CwAAAk1TRnQBSQFMAgEBBAEAAQQBAwEEAQMBEAEAARABAAT/ARkBAAj/AUIBTQE2BwABNgMAASgDAAFA
         AwABIAMAAQEBAAEYBgABGP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8AewACyAHHA7sDzQPdA+4qAAPz
         A/ID8xgAA/oD4hvgA+ID+gkAA/oD4xjhA+ID6gP7DAAD7wHbAdgBzQHKAcsBwgHBAcIBuwK6AbUBtwG4
         A7QBsgKxAbACtgG1A+YYAAPwA+oD0QO8A8wD6APvA/IMAAP8AaQBxAHUAUsBfgGXAUIBdQGOAUEBdAGN
@@ -185,6 +185,18 @@
   <metadata name="toolStripViews.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>256, 5</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="toolStripBtnList.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEbSURBVEhL7ZLPSwJRFIXfX+umtRv/k9m3S1xImzZBCyEo
+        EKVChgHLFMWfGSpa5snL6dr0dCbGebPzwrd4DJzvnjfPnCb55O6RGbs59NEVuzmrweR9mELTLX8k28Nm
+        g6NZrYH5BzBaAIMtrTfiTGILOu+OJVGC5wmJlHied5BwuI0t8Yck0yYPfZK4iQQpeue6sU29R2KbyIa6
+        5WwFTJcM78+4bXtKSTBmqGytwdUucNchqZrI1Sh2C6HSIrFN1l9ssvxkG2nyX5vG4LfRzQtJ1UTDFZGE
+        z9dNkmmTq4Ac1SQYMVQC7a3DXPoktknU+xeJCPQV3b7yB0uwbC7B5QZQeiKRkrSC4iNw8YNTiV6RSs7r
+        ZE+SGadJNsZ8A8AuqGJXVnomAAAAAElFTkSuQmCC
+</value>
+  </data>
   <metadata name="statusStripPreview.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1045, 5</value>
   </metadata>
@@ -196,7 +208,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAo
-        CAAAAk1TRnQBSQFMAgEBBAEAAQwBAwEMAQMBEAEAARABAAT/ARkBAAj/AUIBTQE2BwABNgMAASgDAAFA
+        CAAAAk1TRnQBSQFMAgEBBAEAARQBAwEUAQMBEAEAARABAAT/ARkBAAj/AUIBTQE2BwABNgMAASgDAAFA
         AwABIAMAAQEBAAEYBgABGP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AOoAAsgBxwO7A80D3QPuewADxCHB
         A+wMAAPvAdsB2AHNAcoBywHCAcEBwgG7AroBtQG3AbgDtAGyArEBsAK2AbUD5g8AArQB9AK0AfQCtAH0
         DwACtAH0ArQB9AK0AfQC5wH3KgAB8QHbAc0B9gGWAVwJAAORATYCNwNoAWkFaANQA0MBNgI3A1wBaQNo
@@ -233,21 +245,6 @@
         AR8B4AEfAYABAQHgAQcB+AE/AfABPwGAAQEB4AEHAfwBPwL/AYABAQHgAQcE/wHAAQEI/ws=
 </value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="toolStripBtnList.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEbSURBVEhL7ZLPSwJRFIXfX+umtRv/k9m3S1xImzZBCyEo
-        EKVChgHLFMWfGSpa5snL6dr0dCbGebPzwrd4DJzvnjfPnCb55O6RGbs59NEVuzmrweR9mELTLX8k28Nm
-        g6NZrYH5BzBaAIMtrTfiTGILOu+OJVGC5wmJlHied5BwuI0t8Yck0yYPfZK4iQQpeue6sU29R2KbyIa6
-        5WwFTJcM78+4bXtKSTBmqGytwdUucNchqZrI1Sh2C6HSIrFN1l9ssvxkG2nyX5vG4LfRzQtJ1UTDFZGE
-        z9dNkmmTq4Ac1SQYMVQC7a3DXPoktknU+xeJCPQV3b7yB0uwbC7B5QZQeiKRkrSC4iNw8YNTiV6RSs7r
-        ZE+SGadJNsZ8A8AuqGJXVnomAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <metadata name="statusStripPreview.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1045, 5</value>
-  </metadata>
   <metadata name="toolStripMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>799, 5</value>
   </metadata>

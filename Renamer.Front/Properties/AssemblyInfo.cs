@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Andres Garcia Alves")]
 [assembly: AssemblyProduct("Renamer 3")]
-[assembly: AssemblyCopyright("Copyright © 2021, Andres Garcia Alves")]
+[assembly: AssemblyCopyright("Copyright © 2021 Andres Garcia Alves")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
