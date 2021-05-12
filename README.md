@@ -15,6 +15,8 @@ Current renaming methods:
 
 And also: 'Renaiming preview', 'Undo last rename batch', 'Activity logs', ...
 
+&nbsp;
+
 ### Screenshots
 
 | Main screen                      | Quick Access menu                |
@@ -62,7 +64,7 @@ Download and  doble-click 'Setup.exe' to install.
 
 - .NET Framework 4.8 runtime is needed.  
 
-This is the first public release of this project.  
-If you want, please send me your feedback: andres.garcia.alves@gmail.com  
+&nbsp;
 
-Enjoy!
+This is the first public release of this project.  
+Please send me your feedback about this app: andres.garcia.alves@gmail.com  
