@@ -40,13 +40,13 @@ Download and  doble-click 'Setup.exe' to install.
 1b. Optionally make use of 'Quick Access' menu items for easy-access commonly used user's folders.  
 1c. Click the buttons on the middle to add those file/folders to the batch rename.  
 
-| Button | Description |
-|---------|-------------|
-| `Add Single` | Includes the selected folder/file to the rename batch. |
-| `Add Many` | Includes the selected folder's files to the rename batch. |
-| `Add Tree` | Includes (recursively) the selected folder's files and all subfolders files to the rename batch. |
+| Button          | Description     |
+|-----------------|-----------------|
+| `Add Single`    | Includes the selected folder/file to the rename batch. |
+| `Add Many`      | Includes the selected folder's files to the rename batch. |
+| `Add Tree`      | Includes (recursively) the selected folder's files and all subfolders files to the rename batch. |
 | `Remove Single` | Removes the selected file from the rename batch. |
-| `Remove All` | Removes all folders/files from the rename batch. |
+| `Remove All`    | Removes all folders/files from the rename batch. |
 
 2. On 'Rename Settings' tab:  
 2a. Select a renaming method (Eg. upper-case, lower-case, inverted-case, by-pattern, positional, etc)  
