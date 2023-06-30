@@ -11,7 +11,7 @@ namespace Renamer.Engine.NamingPatterns
     /// Lower-Case naming.
     /// Eg: 'Abc def' -> 'abc def'
     /// </summary>
-    internal sealed class LowerCaseNaming : BaseNaming
+    public sealed class LowerCaseNaming : BaseNaming
     {
         public LowerCaseNaming(IRenamer renamer, RenameSettings renameSettings) : base(renamer, renameSettings) { }
 

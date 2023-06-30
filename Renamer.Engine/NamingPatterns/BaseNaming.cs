@@ -5,7 +5,7 @@ using Renamer.Engine.PhysicalRenamer;
 
 namespace Renamer.Engine.NamingPatterns
 {
-    internal abstract class BaseNaming
+    public abstract class BaseNaming
     {
         protected IRenamer PhysicalRenamer { get; }
         protected RenameSettings RenameSettings { get; }

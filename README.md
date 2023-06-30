@@ -1,4 +1,4 @@
-# Renamer 3
+# Renamer 3.1
 
 A fully-featured files/folders massive renamer.
 
@@ -14,8 +14,6 @@ Current renaming methods:
 - positional-append.
 
 And also: 'Renaiming preview', 'Undo last rename batch', 'Activity logs', ...
-
-&nbsp;
 
 ### Screenshots
 
@@ -40,13 +38,13 @@ Download and  doble-click 'Setup.exe' to install.
 1b. Optionally make use of 'Quick Access' menu items for easy-access commonly used user's folders.  
 1c. Click the buttons on the middle to add those file/folders to the batch rename.  
 
-| Button          | Description     |
-|-----------------|-----------------|
-| `Add Single`    | Includes the selected folder/file to the rename batch. |
-| `Add Many`      | Includes the selected folder's files to the rename batch. |
+| Button          | Description                                                                                      |
+|-----------------|--------------------------------------------------------------------------------------------------|
+| `Add Single`    | Includes the selected folder/file to the rename batch.                                           |
+| `Add Many`      | Includes the selected folder's files to the rename batch.                                        |
 | `Add Tree`      | Includes (recursively) the selected folder's files and all subfolders files to the rename batch. |
-| `Remove Single` | Removes the selected file from the rename batch. |
-| `Remove All`    | Removes all folders/files from the rename batch. |
+| `Remove Single` | Removes the selected file from the rename batch.                                                 |
+| `Remove All`    | Removes all folders/files from the rename batch.                                                 |
 
 2. On 'Rename Settings' tab:  
 2a. Select a renaming method (Eg. upper-case, lower-case, inverted-case, by-pattern, positional, etc)  
@@ -60,11 +58,22 @@ Download and  doble-click 'Setup.exe' to install.
 4a. Optionally review results on 'Activity Logs' tab.  
 4b. Optionally revert changes with 'Undo' buttom on menu.  
 
+&nbsp;
+
 ### Requirements
 
 - .NET 7 runtime is needed.  
 
 &nbsp;
 
-This is the first public release of this project.  
-Please send me your feedback about this app: andres.garcia.alves@gmail.com  
+### Version History
+
+v3.0 (2021.05.07) - Initial release.  
+v3.1 (2023.06.30) - Updated runtime from .NET Framework 4.8 to .NET 7.  
+
+&nbsp;
+
+This source code is licensed under GPL v3.0  
+If you want, please send me your feedback: andres.garcia.alves@gmail.com  
+
+Enjoy!

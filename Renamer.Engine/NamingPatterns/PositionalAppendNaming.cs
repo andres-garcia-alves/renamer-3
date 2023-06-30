@@ -11,7 +11,7 @@ namespace Renamer.Engine.NamingPatterns
     /// Positional Append naming.
     /// Eg: pos 3 = 'Z': 'abc def' -> 'AbZc def'
     /// </summary>
-    internal sealed class PositionalAppendNaming : BaseNaming
+    public sealed class PositionalAppendNaming : BaseNaming
     {
         public PositionalAppendNaming(IRenamer renamer, RenameSettings renameSettings) : base(renamer, renameSettings) { }
 

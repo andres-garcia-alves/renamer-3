@@ -11,7 +11,7 @@ namespace Renamer.Engine.NamingPatterns
     /// Title-Case naming.
     /// Eg: 'abc def' -> 'Abc Def'
     /// </summary>
-    internal sealed class TitleCaseNaming : BaseNaming
+    public sealed class TitleCaseNaming : BaseNaming
     {
         public TitleCaseNaming(IRenamer renamer, RenameSettings renameSettings) : base(renamer, renameSettings) { }
 

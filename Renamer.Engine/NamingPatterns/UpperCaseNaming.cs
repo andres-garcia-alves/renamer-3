@@ -11,7 +11,7 @@ namespace Renamer.Engine.NamingPatterns
     /// Upper-Case naming.
     /// Eg: 'abc def' -> 'ABC DEF'
     /// </summary>
-    internal sealed class UpperCaseNaming : BaseNaming
+    public sealed class UpperCaseNaming : BaseNaming
     {
         public UpperCaseNaming(IRenamer renamer, RenameSettings renameSettings) : base(renamer, renameSettings) { }
 

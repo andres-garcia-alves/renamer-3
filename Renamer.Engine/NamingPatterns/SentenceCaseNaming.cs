@@ -11,7 +11,7 @@ namespace Renamer.Engine.NamingPatterns
     /// Sentence-Case naming.
     /// Eg: 'abc def' -> 'Abc def'
     /// </summary>
-    internal sealed class SentenceCaseNaming : BaseNaming
+    public sealed class SentenceCaseNaming : BaseNaming
     {
         public SentenceCaseNaming(IRenamer renamer, RenameSettings renameSettings) : base(renamer, renameSettings) { }
 

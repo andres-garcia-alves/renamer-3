@@ -11,7 +11,7 @@ namespace Renamer.Engine.NamingPatterns
     /// Simple-Matching naming.
     /// Eg: match = 'def', replace = 'YZ': 'abc def' -> 'abc YZ'
     /// </summary>
-    internal sealed class BySimpleMatchNaming : BaseNaming
+    public sealed class BySimpleMatchNaming : BaseNaming
     {
         public BySimpleMatchNaming(IRenamer renamer, RenameSettings renameSettings) : base(renamer, renameSettings) { }
 

@@ -2,7 +2,7 @@
 
 namespace Renamer.Engine.PhysicalRenamer
 {
-    internal interface IRenamer
+    public interface IRenamer
     {
         Task<bool> Rename(ObjectType objectType, string currentName, string newName);
     }

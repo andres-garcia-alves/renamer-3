@@ -11,7 +11,7 @@ namespace Renamer.Engine.NamingPatterns
     /// Pattern matching naming.
     /// Eg: 'beginnig with text = 'Photo ', Start = '1', Increment = '2', Pad = '4' -> 'Photo 0001', 'Photo 0003', 'Photo 0005', ...'
     /// </summary>
-    internal sealed class ByPatternNaming : BaseNaming
+    public sealed class ByPatternNaming : BaseNaming
     {
         static int currentIndex = int.MinValue;
 

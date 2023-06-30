@@ -11,7 +11,7 @@ namespace Renamer.Engine.NamingPatterns
     /// Tilde-Remove naming.
     /// Eg: 'Áéíóú' -> 'Aeiou'
     /// </summary>
-    internal sealed class RemoveTildesNaming : BaseNaming
+    public sealed class RemoveTildesNaming : BaseNaming
     {
         public RemoveTildesNaming(IRenamer renamer, RenameSettings renameSettings) : base(renamer, renameSettings) { }
 

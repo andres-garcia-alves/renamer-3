@@ -12,7 +12,7 @@ namespace Renamer.Engine.NamingPatterns
     /// Inverted-Case naming.
     /// Eg: 'Abc def' -> 'aBC DEF'
     /// </summary>
-    internal sealed class InvertedCaseNaming : BaseNaming
+    public sealed class InvertedCaseNaming : BaseNaming
     {
         public InvertedCaseNaming(IRenamer renamer, RenameSettings renameSettings) : base(renamer, renameSettings) { }
 
