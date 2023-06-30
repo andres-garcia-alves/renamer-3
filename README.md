@@ -15,6 +15,8 @@ Current renaming methods:
 
 And also: 'Renaiming preview', 'Undo last rename batch', 'Activity logs', ...
 
+&nbsp;
+
 ### Screenshots
 
 | Main screen                      | Quick Access menu                |
@@ -28,6 +30,8 @@ And also: 'Renaiming preview', 'Undo last rename batch', 'Activity logs', ...
 | Rename Preview                   | Rename Logs                      |
 |----------------------------------|----------------------------------|
 | ![](Resources/Screenshot-05.png) | ![](Resources/Screenshot-06.png) |
+
+&nbsp;
 
 ### Setup & Use
 
