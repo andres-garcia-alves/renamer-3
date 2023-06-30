@@ -1,7 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 
 using Renamer.Engine.Entities;
 using Renamer.Engine.PhysicalRenamer;
@@ -35,7 +32,7 @@ namespace Renamer.Engine.NamingPatterns
         {
             string str;
             char[] characters;
-            StringBuilder sb = new StringBuilder();
+            var sb = new StringBuilder();
 
             if (base.RenameSettings.IncludeExtension && Path.GetExtension(currentName) != String.Empty)
             {
@@ -62,7 +59,7 @@ namespace Renamer.Engine.NamingPatterns
                 str = sb.ToString() + Path.GetExtension(currentName);
             }
 
-            string basePath = Path.GetDirectoryName(currentName);
+            string basePath = Path.GetDirectoryName(currentName) ?? "";
             return Path.Combine(basePath, str);
         }
     }

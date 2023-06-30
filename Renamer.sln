@@ -5,9 +5,14 @@ VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Renamer.Front", "Renamer.Front\Renamer.Front.csproj", "{150E811C-2F2F-4FCD-B8DA-A66A03F34615}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Renamer.Engine", "Renamer.Engine\Renamer.Engine.csproj", "{EE724D2B-3359-4189-8A7B-2E7B8C165B20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Renamer.Engine", "Renamer.Engine\Renamer.Engine.csproj", "{EE724D2B-3359-4189-8A7B-2E7B8C165B20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Renamer.Engine.UnitTest", "Renamer.Engine.UnitTest\Renamer.Engine.UnitTest.csproj", "{D70EB75F-654A-4294-9823-040A90060CCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Renamer.Engine.UnitTest", "Renamer.Engine.UnitTest\Renamer.Engine.UnitTest.csproj", "{D70EB75F-654A-4294-9823-040A90060CCD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C605DBC7-7F97-431E-9562-5C9B9DD59013}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

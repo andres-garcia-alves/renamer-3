@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-using Renamer.Engine.Helpers;
+﻿using Renamer.Engine.Helpers;
 
 namespace Renamer.Engine.Entities
 {
@@ -39,7 +36,7 @@ namespace Renamer.Engine.Entities
                     case RenameType.Unknown:            throw new ArgumentException("No rename method selected.");
                 }
             }
-            catch (Exception ex) { throw ex; }
+            catch (Exception) { throw; }
         }
 
         private void ValidateBySimpleMatch()

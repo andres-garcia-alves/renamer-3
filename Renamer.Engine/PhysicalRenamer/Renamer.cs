@@ -17,13 +17,13 @@ namespace Renamer.Engine.PhysicalRenamer
         {
             try
             {
-                bool validation = this.Validations(objectType, currentName, newName);
+                bool validation = Validations(objectType, currentName, newName);
                 if (!validation) { return Task.FromResult<bool>(false); }
 
                 // actual rename
                 if (objectType == ObjectType.File)
                 {
-                    FileInfo fi = new FileInfo(currentName);
+                    var fi = new FileInfo(currentName);
                     fi.MoveTo(newName);
                 }
                 else if (objectType == ObjectType.Directory)
@@ -38,7 +38,7 @@ namespace Renamer.Engine.PhysicalRenamer
             catch (Exception) { return Task.FromResult<bool>(false); }
         }
 
-        private bool Validations(ObjectType objectType, string currentName, string newName)
+        private static bool Validations(ObjectType objectType, string currentName, string newName)
         {
             if (objectType == ObjectType.Unknown) { return false; }
             // throw new ArgumentException($"Unknown object type to rename.");

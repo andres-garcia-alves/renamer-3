@@ -8,8 +8,6 @@ namespace Renamer.Engine.Entities
         public NamingResult NamingResult { get; set; }
         public int Progress { get; set; }
 
-        public NamingProcessedEventArgs() { }
-
         public NamingProcessedEventArgs(Operation operation, NamingResult namingResult, int progress)
         {
             this.Operation = operation;

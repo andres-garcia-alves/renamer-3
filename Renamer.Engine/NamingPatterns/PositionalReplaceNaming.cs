@@ -1,8 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Threading.Tasks;
-
-using Renamer.Engine.Entities;
+﻿using Renamer.Engine.Entities;
 using Renamer.Engine.PhysicalRenamer;
 
 namespace Renamer.Engine.NamingPatterns
@@ -61,7 +57,7 @@ namespace Renamer.Engine.NamingPatterns
                 }
             }
 
-            string basePath = Path.GetDirectoryName(currentName);
+            string basePath = Path.GetDirectoryName(currentName) ?? "";
             return Path.Combine(basePath, str);
         }
     }

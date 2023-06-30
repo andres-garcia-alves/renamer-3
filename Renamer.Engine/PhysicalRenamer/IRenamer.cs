@@ -1,6 +1,4 @@
-﻿using System.Threading.Tasks;
-
-namespace Renamer.Engine.PhysicalRenamer
+﻿namespace Renamer.Engine.PhysicalRenamer
 {
     public interface IRenamer
     {

@@ -1,13 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Renamer.Engine.Entities
+﻿namespace Renamer.Engine.Entities
 {
     public class RenameSettings
     {
         public RenameType RenameType { get; }
         public List<string> Parameters { get; }
         public bool IncludeExtension { get; }
+
+        public RenameSettings(RenameType renameType) : this(renameType, new List<string>(), default)
+        {
+        }
 
         public RenameSettings(RenameType renameType, List<string> parameters, bool includeExtension = false)
         {

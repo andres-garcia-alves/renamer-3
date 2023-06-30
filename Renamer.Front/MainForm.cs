@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Text;
 
 using Renamer.Engine;
 using Renamer.Engine.Entities;
@@ -18,8 +12,8 @@ namespace Renamer.Front
         private Enums.SortType sortType = Enums.SortType.Ascending;
         private Enums.SortColumn sortColumn = Enums.SortColumn.FirstColumn;
 
-        private StringBuilder sbActivityLogs = new StringBuilder();
-        private List<NamingResult> namingResults = new List<NamingResult>();
+        private readonly StringBuilder sbActivityLogs = new();
+        private List<NamingResult> namingResults = new();
 
         public MainForm()
         {
@@ -82,6 +76,7 @@ namespace Renamer.Front
 
         private void menuBtnQuickAccess_DropDownItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
+            if (e.ClickedItem == null) { return; }
             Cursor = Cursors.WaitCursor;
 
             // retrieve full path of selected quick-access folder
@@ -124,17 +119,19 @@ namespace Renamer.Front
 
         #region TreeView & ListView events
 
-        private void treeViewFolderPick_BeforeExpand(object sender, TreeViewCancelEventArgs e)
+        private void treeViewFolderPick_BeforeExpand(object? sender, TreeViewCancelEventArgs e)
         {
+            if (e.Node == null) { return; }
             this.fullPath = Path.GetFullPath(e.Node.FullPath);
-
+            
             this.statusStripLabelPath.Text = this.fullPath;
             this.LoadSubDirectories(this.fullPath);
             this.LoadFiles(this.fullPath);
         }
 
-        private void treeViewFolderPick_BeforeSelect(object sender, TreeViewCancelEventArgs e)
+        private void treeViewFolderPick_BeforeSelect(object? sender, TreeViewCancelEventArgs e)
         {
+            if (e.Node == null) { return; }
             this.fullPath = Path.GetFullPath(e.Node.FullPath);
 
             this.statusStripLabelPath.Text = this.fullPath;
@@ -210,7 +207,7 @@ namespace Renamer.Front
         {
             if (this.treeViewFolderPick.SelectedNode == null) { return; }
 
-            DirectoryInfo dirInfo = new DirectoryInfo(this.fullPath);
+            var dirInfo = new DirectoryInfo(this.fullPath);
             FileInfo[] filesInfo = dirInfo.GetFiles("*.*", SearchOption.AllDirectories);
 
             foreach (var fileInfo in filesInfo)
@@ -241,14 +238,14 @@ namespace Renamer.Front
 
         private void radBySimpleMatch_CheckedChanged(object sender, EventArgs e)
         {
-            bool status = (sender as RadioButton).Checked;
+            bool status = ((RadioButton)sender).Checked;
             this.txtMatchSearch.Enabled = status;
             this.txtMatchReplacement.Enabled = status;
         }
 
         private void radByPattern_CheckedChanged(object sender, EventArgs e)
         {
-            bool status = (sender as RadioButton).Checked;
+            bool status = ((RadioButton)sender).Checked;
             this.txtBeginnigText.Enabled = status;
             this.txtStartIndex.Enabled = status;
             this.txtIncrement.Enabled = status;
@@ -257,14 +254,14 @@ namespace Renamer.Front
 
         private void radPositionalReplace_CheckedChanged(object sender, EventArgs e)
         {
-            bool status = (sender as RadioButton).Checked;
+            bool status = ((RadioButton)sender).Checked;
             this.txtPositionalReplaceIndex.Enabled = status;
             this.txtPositionalReplaceText.Enabled = status;
         }
 
         private void radPositionalAppend_CheckedChanged(object sender, EventArgs e)
         {
-            bool status = (sender as RadioButton).Checked;
+            bool status = ((RadioButton)sender).Checked;
             this.txtPositionalAppendIndex.Enabled = status;
             this.txtPositionalAppendText.Enabled = status;
         }
@@ -291,7 +288,7 @@ namespace Renamer.Front
 
         #region Renamer.Engine generated events
 
-        private void RenameEngine_NamingProcessed(object sender, NamingProcessedEventArgs e)
+        private void RenameEngine_NamingProcessed(object? sender, NamingProcessedEventArgs e)
         {
             try
             {
@@ -312,7 +309,7 @@ namespace Renamer.Front
 
                 Application.DoEvents();
             }
-            catch (Exception ex) { throw ex; }
+            catch (Exception) { throw; }
         }
 
         #endregion
@@ -440,14 +437,13 @@ namespace Renamer.Front
         {
             try
             {
-                var renameSettings = this.BuildRenameSettings();
-                var renameEngine = new RenameEngine(renameSettings);
-
                 // get NamingRequest items
                 var listViewItems = ListViewHelper.GetCollectionItems(this.listViewSelectedItems.Items);
                 var namingRequests = listViewItems.Select(a => new NamingRequest((ObjectType)a.Tag, a.Text)).ToList();
 
                 // send the files/directories to calculate rename changes
+                var renameSettings = this.BuildRenameSettings();
+                var renameEngine = new RenameEngine(renameSettings);
                 var namingResults = renameEngine.Preview(namingRequests);
 
                 // refresh UI
@@ -466,8 +462,7 @@ namespace Renamer.Front
             {
                 var renameSettings = this.BuildRenameSettings();
 
-                var renameEngine = new RenameEngine(renameSettings);
-                renameEngine.NamingProcessed += RenameEngine_NamingProcessed;
+                var renameEngine = new RenameEngine(renameSettings, RenameEngine_NamingProcessed);
 
                 LogHelper.LogHeader(renameSettings);
 
@@ -483,7 +478,7 @@ namespace Renamer.Front
             }
             catch (Exception ex)
             {
-                LogHelper.LogException(ex); throw ex;
+                LogHelper.LogException(ex); throw;
             }
             finally
             {
@@ -498,10 +493,9 @@ namespace Renamer.Front
         {
             try
             {
-                var renameSettings = new RenameSettings(RenameType.Unknown, default, default);
-                
-                var renameEngine = new RenameEngine(renameSettings);
-                renameEngine.NamingProcessed += RenameEngine_NamingProcessed;
+                var renameSettings = new RenameSettings(RenameType.Unknown); // , new List<string>(), default
+
+                var renameEngine = new RenameEngine(renameSettings, RenameEngine_NamingProcessed);
 
                 LogHelper.LogHeader(renameSettings);
 
@@ -513,7 +507,7 @@ namespace Renamer.Front
             }
             catch (Exception ex)
             {
-                LogHelper.LogException(ex); throw ex;
+                LogHelper.LogException(ex); throw;
             }
             finally
             {

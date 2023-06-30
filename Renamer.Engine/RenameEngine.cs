@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-using Renamer.Engine.Entities;
+﻿using Renamer.Engine.Entities;
 using Renamer.Engine.NamingPatterns;
 using Renamer.Engine.PhysicalRenamer;
 
@@ -11,16 +6,22 @@ namespace Renamer.Engine
 {
     public class RenameEngine
     {
-        private readonly RenameSettings renameSettings = null;
-        private readonly IRenamer renamer = null;
+        private readonly RenameSettings renameSettings;
+        private readonly IRenamer renamer;
 
-        public event EventHandler<NamingProcessedEventArgs> NamingProcessed;
+        public event EventHandler<NamingProcessedEventArgs>? NamingProcessed;
         public delegate void NamingProcessedEventHandler(object sender, NamingProcessedEventArgs e);
 
-        public RenameEngine(RenameSettings renameSettings)
+        public RenameEngine(RenameSettings renameSettings) : this(renameSettings, null)
+        {
+        }
+
+        public RenameEngine(RenameSettings renameSettings, EventHandler<NamingProcessedEventArgs>? namingProcessed)
         {
             this.renameSettings = renameSettings;
             this.renamer = new PhysicalRenamer.Renamer();
+
+            this.NamingProcessed += namingProcessed;
         }
 
         /// <summary>
@@ -45,7 +46,7 @@ namespace Renamer.Engine
 
                 return namingResults;
             }
-            catch (Exception ex) { throw ex; }
+            catch (Exception) { throw; }
         }
 
         /// <summary>
@@ -75,7 +76,7 @@ namespace Renamer.Engine
 
                 return namingResults;
             }
-            catch (Exception ex) { throw ex; }
+            catch (Exception) { throw; }
         }
 
         /// <summary>
@@ -106,7 +107,7 @@ namespace Renamer.Engine
 
                 return namingResults;
             }
-            catch (Exception ex) { throw ex; }
+            catch (Exception) { throw; }
         }
 
         protected virtual void OnNamingProcessed(NamingProcessedEventArgs e)

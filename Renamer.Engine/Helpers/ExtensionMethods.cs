@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Renamer.Engine.Helpers
+﻿namespace Renamer.Engine.Helpers
 {
     internal static class ExtensionMethods
     {
@@ -34,9 +32,9 @@ namespace Renamer.Engine.Helpers
         /// <returns>Returns true if the text is a valid filename, otherwise false.</returns>
         public static bool IsValidFileName(this string text)
         {
-            if (text.Contains("\\") || text.Contains("/") || text.Contains(":") ||
-                text.Contains("*") || text.Contains("?") || text.Contains("\"") ||
-                text.Contains("<") || text.Contains(">") || text.Contains("|"))
+            if (text.Contains('\\') || text.Contains('/') || text.Contains(':') ||
+                text.Contains('*') || text.Contains('?') || text.Contains('"') ||
+                text.Contains('<') || text.Contains('>') || text.Contains('|'))
                 return false;
 
             return true;
