@@ -62,7 +62,7 @@ Download and  doble-click 'Setup.exe' to install.
 
 ### Requirements
 
-- .NET Framework 4.8 runtime is needed.  
+- .NET 7 runtime is needed.  
 
 &nbsp;
 
