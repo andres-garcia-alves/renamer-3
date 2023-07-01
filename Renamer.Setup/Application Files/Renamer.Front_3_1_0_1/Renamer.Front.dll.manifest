@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="Renamer.Front.exe" version="3.1.0.0" publicKeyToken="0000000000000000" language="en" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="Renamer.Front.exe" version="3.1.0.1" publicKeyToken="0000000000000000" language="en" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="Main.ico" xmlns="urn:schemas-microsoft-com:asm.v1">A fully-featured files/folders massive renamer.</description>
   <application />
   <entryPoint>
@@ -69,7 +69,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>q/BdzWyUXIFZdC9j+EBLQ06YBbgTqDuDfdkfXhxsf0A=</dsig:DigestValue>
+      <dsig:DigestValue>TS5/Ox2KTOd+uOa5FtDk39Gl3a9h8tX038fx5cZsey8=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Renamer.Front.deps.json" size="737">
@@ -87,7 +87,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>0g56dcYSJn+LYBC60AvntSwF8Ekg+yIz/pIvHe7vg04=</dsig:DigestValue>
+      <dsig:DigestValue>n0qlgILqhnc/v6KlZ8rFY2NCu3aKWkAkQma/k7KRAgc=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Renamer.Front.dll.config" size="175">
@@ -99,13 +99,13 @@
       <dsig:DigestValue>x+LBz18R3q6oGLrc7GN5E/9Di2zqPZIJyG/EK7SWINE=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Renamer.Front.exe" size="159232">
+  <file name="Renamer.Front.exe" size="158720">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>XXqzhut9QbsedeUD4BpydrFm2o0qFm8gSonEkwZmNxM=</dsig:DigestValue>
+      <dsig:DigestValue>FlCaW7SxI2CL83FaS9VSvbfHf3lp5i8+YVh/DKxgq3g=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Renamer.Front.runtimeconfig.json" size="372">

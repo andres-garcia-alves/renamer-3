@@ -72,8 +72,9 @@ Download and  doble-click 'Setup.exe' to install.
 
 ### Version History
 
-v3.0 (2021.05.07) - Initial release.  
-v3.1 (2023.06.30) - Updated runtime from .NET Framework 4.8 to .NET 7.  
+v3.0.0 (2021.05.07) - Initial release.  
+v3.1.0 (2023.06.30) - Updated runtime from .NET Framework 4.8 to .NET 7.  
+v3.1.1 (2023.07.01) - Bug fix con consecutive renaming.  
 
 &nbsp;
 
