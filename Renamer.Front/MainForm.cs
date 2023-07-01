@@ -298,7 +298,7 @@ namespace Renamer.Front
                 if (e.NamingResult.Success)
                 {
                     var listViewItem = this.listViewSelectedItems.Items.Find(e.NamingResult.OldName, false)[0];
-                    listViewItem.Text = e.NamingResult.NewName;
+                    listViewItem.Name = listViewItem.Text = e.NamingResult.NewName;
                 }
 
                 // logs
